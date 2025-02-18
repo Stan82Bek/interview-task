@@ -43,7 +43,7 @@ Feature: E-commerce functionality
      And I click the login button
      Then I need to verify error message "Epic sadface: Sorry, this user has been locked out."
 
-     @OtherUserName   
+     @otherUserName   
      Scenario: Verify users can login with other user
      When I enter username "other usernames"
      And I enter password "valid password"
@@ -51,7 +51,7 @@ Feature: E-commerce functionality
      Then I need to verify error message "Epic sadface: Username and password do not match any user in this service"
 
    
-     @InvalidPassword 
+     @invalidPassword 
      Scenario: Verify users can login with invalid password
      When I enter username "valid username"
      And I enter password "invalid"

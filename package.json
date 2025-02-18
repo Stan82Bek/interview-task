@@ -4,15 +4,16 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "test:tag": "cucumber-js --tags @OtherUserName",
+    "test:tag": "cucumber-js --tags @productPurchaseFlow",
     "Mac-open:report": "open cucumber-report.html",
     "Windows-open:report": "start cucumber-report.html"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^10.9.0",
     "@playwright/test": "^1.50.1",
     "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0"
   }
-  
-}
 
+}

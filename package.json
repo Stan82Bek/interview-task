@@ -1,10 +1,10 @@
 {
-  "name": "library-automation",
+  "name": "interview-task",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "test:tag": "cucumber-js --tags @productPurchaseFlow",
+    "test:tag": "cucumber-js --tags @invalidPassword",
     "Mac-open:report": "open cucumber-report.html",
     "Windows-open:report": "start cucumber-report.html"
   },

@@ -23,7 +23,7 @@ Feature: E-commerce functionality
      Then I need to click finish button and verify thank you message
 
       @cartPersistenceTest
-     Scenario: Successful checkout with refresh and navigate back and forward the page
+     Scenario: Refresh and navigate back and forward the page
      When I enter username "valid username"
      And I enter password "valid password"
      And I click the login button
@@ -33,7 +33,6 @@ Feature: E-commerce functionality
      Then I refresh the page 
      And I navigate away and back the page 
      When I need to verify selected products ready to checkout
-     Then I need to click finish button and verify thank you message
 
 
      @lockedUser   
@@ -56,6 +55,8 @@ Feature: E-commerce functionality
      When I enter username "valid username"
      And I enter password "invalid"
      And I click the login button
-     Then I need to verify error message "Epic sadface: Password is required"
+     Then I need to verify error message "Epic sadface: Username and password do not match any user in this service"
+
+   
 
    

@@ -63,5 +63,8 @@ Before(async function () {
 
 
 After(async function () {
-  await this.close();
+  After(async function () {
+    await this.page.waitForTimeout(5000);;
+    await this.close();
+  });
 });

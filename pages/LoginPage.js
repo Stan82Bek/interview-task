@@ -46,6 +46,7 @@ class LoginPage extends BasePage {
     const errorMessageLocator = await this.page.locator(`//*[contains(text(),'${message}')]`);
     const errorMessage = await errorMessageLocator.innerText();
     console.log('Error message: '+errorMessage);
+    this.page.waitForTimeout(5000);
     expect(errorMessage).toBe(message);
     }
   }

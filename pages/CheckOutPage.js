@@ -36,6 +36,7 @@ async verifyComleteMessage(){
     await this.finish.click();
     const message = await this.thankYouMessage.innerText();
     console.log(message);
+    this.page.waitForTimeout(5000);
     await expect(this.thankYouMessage).toContainText('Thank you for your order!');
   
 }

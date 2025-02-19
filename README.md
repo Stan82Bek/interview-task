@@ -92,6 +92,15 @@ Defines the project configuration, including:
 - **Dependencies:** Cucumber, Playwright, dotenv.
 - **Module Type:** `module` (ES Module support).
 
+### 8. `.gitignore` File
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.env
+
+
 ---
 
 ## Conclusion

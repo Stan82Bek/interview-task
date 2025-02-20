@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "test:tag": "cucumber-js --tags @invalidPassword",
+    "test:tag": "cucumber-js --tags @lockedUser",
     "Mac-open:report": "open cucumber-report.html",
     "Windows-open:report": "start cucumber-report.html"
   },

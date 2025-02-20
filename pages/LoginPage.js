@@ -48,6 +48,7 @@ class LoginPage extends BasePage {
     console.log('Error message: '+errorMessage);
     this.page.waitForTimeout(5000);
     expect(errorMessage).toBe(message);
+    await this.page.screenshot({ path: 'screenshot.png' });
     }
   }
   

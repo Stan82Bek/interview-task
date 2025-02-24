@@ -1,7 +1,7 @@
 Feature: E-commerce functionality
 
      
-     @validLogin @SMOKE
+     @SMOKE
      Scenario: Successful login with valid credentials
      When I enter username "valid username"
      And I enter password "valid password"

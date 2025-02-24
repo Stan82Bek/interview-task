@@ -1,22 +1,15 @@
 pipeline {
-    agent any
-
+    agent { docker { image 'mcr.microsoft.com/playwright:v1.49.1-jammy' } }
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'npm ci'
+                sh 'npx playwright install --with-deps'
             }
         }
-
         stage('Run Tests') {
             steps {
-                sh 'cucumber-js --tags @SMOKE'
+                sh 'npx cucumber-js --tags @SMOKE'
             }
         }
     }

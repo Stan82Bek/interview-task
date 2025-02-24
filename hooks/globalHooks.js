@@ -44,8 +44,17 @@ dotenv.config({ path: "./.env" });
     }
   
     async close() {
-      await this.page.close();
-      await this.browser.close();
+      try {
+        if (this.page) {
+            await this.page.close();
+        }
+        if (this.browser) {
+            await this.browser.close();
+        }
+    } catch (error) {
+        console.error('Error during cleanup in After hook:', error.message);
+    }
+
     }
   }
   
@@ -62,9 +71,9 @@ Before(async function () {
 
 
 
-After(async function () {
+
   After(async function () {
-    await this.page.waitForTimeout(5000);;
+  //  await this.page.waitForTimeout(5000);;
     await this.close();
   });
-});
+

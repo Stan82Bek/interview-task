@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'npx cucumber-js --tags @SMOKE'
+                sh 'cucumber-js'
             }
         }
     }

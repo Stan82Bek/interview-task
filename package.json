@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "npx @cucumber/cucumber",
     "test:tag": "npx @cucumber/cucumber --tags @SMOKE",
     "Mac-open:report": "open cucumber-report.html",
     "Windows-open:report": "start cucumber-report.html"

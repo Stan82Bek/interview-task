@@ -39,7 +39,7 @@ Feature: E-commerce functionality
      When I enter username "locked"
      And I enter password "valid password"
      And I click the login button
-     Then I need to verify error message "Epic sadface: Sorry, this user has been locked out."
+     Then I need to verify error message "Epic sadface: Sorry, this user has been."
 
      @otherUserName   @SMOKE
      Scenario: Verify users can login with other user

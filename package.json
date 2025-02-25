@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "install:playwright": "npx playwright install-deps", 
+  "install:playwright": "sudo npx playwright install-deps", 
   "test": "npx @cucumber/cucumber",
-  "test:tag": "npx @cucumber/cucumber --tags @SMOKE",
+  "test:tag": "npx @cucumber/cucumber --tags @lockedUser",
   "Mac-open:report": "open cucumber-report.html",
   "Windows-open:report": "start cucumber-report.html"
 },

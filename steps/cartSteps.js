@@ -3,7 +3,8 @@ const { expect } = require('@playwright/test');
 
 
 Then('I need to checkout the products', async function () {
-    await pageManager.cartPage.proceedToCheckout();
+  
+  await pageManager.cartPage.proceedToCheckout();
   });
 
   Then('I refresh the page', async function () {

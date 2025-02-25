@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx @cucumber/cucumber",
-    "test:tag": "npx @cucumber/cucumber --tags @SMOKE",
-    "Mac-open:report": "open cucumber-report.html",
-    "Windows-open:report": "start cucumber-report.html"
-  },
+  "install:playwright": "npx playwright install", 
+  "test": "npx @cucumber/cucumber",
+  "test:tag": "npx @cucumber/cucumber --tags @SMOKE",
+  "Mac-open:report": "open cucumber-report.html",
+  "Windows-open:report": "start cucumber-report.html"
+},
   "dependencies": {
     "@playwright/test": "^1.50.1",
     "dotenv": "^16.4.7",
